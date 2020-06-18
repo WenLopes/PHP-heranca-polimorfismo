@@ -1,4 +1,9 @@
 version: '3'
+
+volumes:
+    mysql_data:
+      driver: local
+
 services:
     nginx:
         container_name: nginx
@@ -58,7 +63,7 @@ services:
         ports:
             - "${MYSQL_PORT}:3306"
         volumes:
-            - ${MYSQL_DATA}:/var/lib/mysql
+            - mysql_data:/var/lib/mysql
         environment:
             - MYSQL_DATABASE=${MYSQL_DATABASE}
             - MYSQL_USER=${MYSQL_USER}

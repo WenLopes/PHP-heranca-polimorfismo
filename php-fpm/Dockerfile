@@ -1,4 +1,5 @@
 FROM phpdockerio/php74-fpm:latest
+#MUDAR ESSE WORKDIR:
 WORKDIR "/application"
 
 # Fix debconf warnings upon build

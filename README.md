@@ -92,3 +92,5 @@ Docker utilizando o compose, arquivo de configuração com variáveis de ambient
 	use teste;
 	
 	show tables;
+
+9. Aplicar conteudo do seu projeto PHP dentro da pasta htdocs
